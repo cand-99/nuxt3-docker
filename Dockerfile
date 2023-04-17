@@ -17,6 +17,7 @@ COPY . .
 RUN npx prisma generate
 
 # Apply database migrations
+RUN chmod 400 keyfile
 # RUN npx prisma db push
 
 # Build the application
